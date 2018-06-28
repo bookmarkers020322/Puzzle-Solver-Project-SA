@@ -49,7 +49,7 @@ public class Swap_puzzle {
                     y++;
                 }
                 y=0;
-                //System.out.println("");
+                System.out.println("");
                 x++;
             }
             
