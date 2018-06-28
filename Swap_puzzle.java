@@ -55,8 +55,8 @@ public class Swap_puzzle {
             
             a++;
             x=0;
-            //System.out.println(target);
-            //System.out.print(".");
+            System.out.println(target);
+            System.out.print(".");
         }
     }
     
