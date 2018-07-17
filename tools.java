@@ -2,7 +2,6 @@ package swap_puzzle;
 
 public class tools {
     public static int board [][] = new int [3][3];
-    public static int rules [][] = {{1,2,3},{4,5,6},{7,8,9}};
     public static int ix=0,iy=0;
     public static int simpan[]=new int[2];
     
