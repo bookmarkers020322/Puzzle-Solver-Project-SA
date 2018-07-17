@@ -1,17 +1,15 @@
 package swap_puzzle;
 import java.util.Scanner;
 public class Swap_puzzle {
-    public  static int board [][] = new int [3][3];
-    public static int simpan[]=new int[2];
+    public static tools aste = new tools ();
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int angka [] = new int [9];
         int a =0,x=0,y=0;
         System.out.println("Masukkan angka : ");
         while(a<9){
             while(x<3){
                 while(y<3){
-                    board [x][y] = in.nextInt();
+                    aste.setboard(x,y,in.nextInt());
                     y++;
                 }
                 y=0;
@@ -20,12 +18,14 @@ public class Swap_puzzle {
             a++;
         }
         tampil();
+        aste.cari();
+        tampil();
     }
     public static void tampil(){
         int a=0, x=0, y=0;
         while(x<3){
             while(y<3){
-                System.out.print(" "+board[x][y]);
+                System.out.print(" "+aste.getboard(x,y));
                 y++;
             }
             y=0;
