@@ -4,7 +4,6 @@ public class tools {
     public static int board [][] = new int [3][3];
     public static int rules [][] = {{1,2,3},{4,5,6},{7,8,9}};
     public static int ix=0,iy=0;
-    //public static int target [][] = new int [1][1];
     public static int simpan[]=new int[2];
     
     public void setboard(int x,int y,int isi){
@@ -25,21 +24,15 @@ public class tools {
                         penempatan(x,y,target);
                         target++;
                         break;
-//                        y=3;
-//                        x=3;
                     }
                     y++;
                 }
                 y=0;
-                //System.out.println("");
                 x++;
-//                break;
             }
             
             a++;
             x=0;
-            //System.out.println(target);
-            //System.out.print(".");
         }
     }
     public void penempatan(int x,int y,int target){
@@ -47,7 +40,6 @@ public class tools {
         int langsir,yy=y,xx=x;
         System.out.println("koordinat seharus nya "+ix+" dan "+iy);
         while(y!=iy){
-//            y++;
             if(y>iy){
                 y--;
                 System.out.println("Kiri");
