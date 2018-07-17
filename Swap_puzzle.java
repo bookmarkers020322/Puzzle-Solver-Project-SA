@@ -7,7 +7,7 @@ public class Swap_puzzle {
         Scanner in = new Scanner(System.in);
         int angka [] = new int [9];
         int a =0,x=0,y=0;
-        System.out.println(" masukan angka :");
+        System.out.println("Masukkan angka : ");
         while(a<9){
             while(x<3){
                 while(y<3){
