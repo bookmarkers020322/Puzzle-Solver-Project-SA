@@ -20,7 +20,6 @@ public class tools {
                     if(board[x][y]==target){
                         simpan[0] = x;
                         simpan[1] = y;
-                        System.out.println("posisi "+target+" ada di koordinat "+simpan[0]+" dan "+simpan[1]);
                         penempatan(x,y,target);
                         target++;
                         break;
@@ -37,8 +36,7 @@ public class tools {
     }
     public void penempatan(int x,int y,int target){
         Swap_puzzle yu = new Swap_puzzle();
-        int langsir,yy=y,xx=x;
-        System.out.println("koordinat seharus nya "+ix+" dan "+iy);
+        int yy=y,xx=x;
         while(y!=iy){
             if(y>iy){
                 y--;
@@ -46,6 +44,21 @@ public class tools {
             }else{
                 y++;
                 System.out.println("Kanan");
+            }
+            
+            board[xx][yy]=board[x][y];
+            board[x][y]=target;
+            System.out.println(board[x][y]);
+            yu.tampil();
+            xx=x;yy=y;
+        }
+        while(x!=ix){
+            if(x>ix){
+                x--;
+                System.out.println("Atas");
+            }else{
+                x++;
+                System.out.println("Bawah");
             }
             
             board[xx][yy]=board[x][y];
